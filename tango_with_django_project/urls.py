@@ -20,7 +20,7 @@ from rango import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-
+# add an about 
 urlpatterns = [
     path('', views.index, name ='index'),
     path('rango/', include('rango.urls'), name ='about'),
