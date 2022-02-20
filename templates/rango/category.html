@@ -14,10 +14,12 @@
                 <h1>{{ category.name }}</h1>
                 {% if pages %}
                     <ul>
+                        
                     {% for page in pages %}
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                     </ul>
+                    <a href="/rango/category/{{category.slug}}/add_page/">Add Page</a> <br />
                 {% else %}
                     <strong>No pages currently in category.</strong>
                 {% endif %}
@@ -26,7 +28,7 @@
             {% endif %}
         </div>
 
-        <!-- guess need a new part to return to index -->
+        
         <div>
             <a href="/rango/">index</a>
 
