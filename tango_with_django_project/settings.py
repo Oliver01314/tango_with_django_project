@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -115,6 +116,10 @@ LOGIN_URL = 'rango:login'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+
 
 USE_L10N = True
 
